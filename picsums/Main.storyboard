@@ -17,52 +17,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aSb-e2-NZY" customClass="LazyImageView" customModule="picsums" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aSb-e2-NZY" customClass="LazyImageView" customModule="picsums" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="374"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="374" id="cEo-yT-QHL"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0L2-2b-0SU">
-                                <rect key="frame" x="20" y="443" width="374" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="JsU-cH-OkR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fcs-Sn-5YS">
-                                <rect key="frame" x="20" y="517" width="374" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="cg1-no-rKk"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="whs-Lu-xFl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="whs-Lu-xFl" firstAttribute="trailing" secondItem="Fcs-Sn-5YS" secondAttribute="trailing" constant="20" id="5Sf-56-hDL"/>
-                            <constraint firstItem="Fcs-Sn-5YS" firstAttribute="leading" secondItem="0L2-2b-0SU" secondAttribute="leading" id="902-DM-NI5"/>
                             <constraint firstItem="aSb-e2-NZY" firstAttribute="leading" secondItem="whs-Lu-xFl" secondAttribute="leading" id="Af5-ES-fvY"/>
-                            <constraint firstItem="aSb-e2-NZY" firstAttribute="centerX" secondItem="0L2-2b-0SU" secondAttribute="centerX" id="C1E-FK-eCx"/>
-                            <constraint firstItem="Fcs-Sn-5YS" firstAttribute="leading" secondItem="whs-Lu-xFl" secondAttribute="leading" constant="20" id="NLu-NJ-Gq4"/>
-                            <constraint firstItem="whs-Lu-xFl" firstAttribute="trailing" secondItem="0L2-2b-0SU" secondAttribute="trailing" constant="20" id="PiV-xK-C4m"/>
                             <constraint firstItem="aSb-e2-NZY" firstAttribute="top" secondItem="whs-Lu-xFl" secondAttribute="top" constant="44" id="WCt-7q-UwE"/>
-                            <constraint firstItem="0L2-2b-0SU" firstAttribute="leading" secondItem="whs-Lu-xFl" secondAttribute="leading" constant="20" id="ik0-Fk-h3c"/>
-                            <constraint firstItem="Fcs-Sn-5YS" firstAttribute="top" secondItem="0L2-2b-0SU" secondAttribute="bottom" constant="24" id="ioI-9j-8zg"/>
-                            <constraint firstItem="0L2-2b-0SU" firstAttribute="top" secondItem="aSb-e2-NZY" secondAttribute="bottom" constant="25" id="klm-qy-eNE"/>
-                            <constraint firstItem="aSb-e2-NZY" firstAttribute="centerX" secondItem="Fcs-Sn-5YS" secondAttribute="centerX" id="uoA-Kn-Wcy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Nh0-hk-5xC"/>
                     <connections>
                         <outlet property="detailImageView" destination="aSb-e2-NZY" id="iZk-zh-P96"/>
-                        <outlet property="firstlable" destination="0L2-2b-0SU" id="JWc-gW-oRB"/>
-                        <outlet property="secoundlable" destination="Fcs-Sn-5YS" id="fgT-ck-u3Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iLg-fm-za9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
