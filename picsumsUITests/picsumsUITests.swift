@@ -2,8 +2,8 @@
 //  picsumsUITests.swift
 //  picsumsUITests
 //
-//  Created by Rana singh on 12/01/21.
-//  Copyright © 2021 Rana singh. All rights reserved.
+//  Created by Admin on 12/01/21.
+//  Copyright © 2021 Admin. All rights reserved.
 //
 
 import XCTest
